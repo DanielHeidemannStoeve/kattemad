@@ -9,7 +9,7 @@ Exercise list in order:
 * [ApplicationSets](applicationsets.md)
 * [Projects](projects.md)
 * [Sealed Secrets](sealed-secrets.md) (Not done yet)
-
+????????????????????????
 ## Using this outside of the workshop
 
 You need to have ArgoCD installed and running.
