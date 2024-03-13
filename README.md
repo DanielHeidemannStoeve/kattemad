@@ -11,7 +11,7 @@ Exercise list in order:
 * [Sealed Secrets](sealed-secrets.md) (Not done yet)
 
 ## Using this outside of the workshop
-
+hje?
 You need to have ArgoCD installed and running.
 All exercises should work on minikube, or kind.
 You can refer to the [installation link](https://argo-cd.readthedocs.io/en/stable/operator-manual/installation/) for how to install ArgoCD.
