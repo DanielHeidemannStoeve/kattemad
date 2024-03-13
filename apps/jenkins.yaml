@@ -3,20 +3,21 @@ kind: Application
 metadata:
   name: jenkins
   namespace: argocd
-destination:
-  server: 'https://kubernetes.default.svc'
-  namespace: student-8
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-sources:
-  - repoURL: 'https://charts.bitnami.com/bitnami'
-    targetRevision: 12.4.0
-    helm:
-      valueFiles:
-        - $values/jenkins/values.yaml
-    chart: jenkins
-  - repoURL: 'https://github.com/DanielHeidemannStoeve/kattemad/'
-    targetRevision: main
-    ref: values
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: student-8
+    syncPolicy:
+      automated:
+        prune: true
+        selfHeal: true
+  sources:
+    - repoURL: 'https://charts.bitnami.com/bitnami'
+      targetRevision: 12.4.0
+      helm:
+        valueFiles:
+          - $values/jenkins/values.yaml
+      chart: jenkins
+    - repoURL: 'https://github.com/DanielHeidemannStoeve/kattemad/'
+      targetRevision: main
+      ref: values
